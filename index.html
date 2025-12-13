@@ -1,2 +1,316 @@
-<h1>Hello! My website works!</h1>
-<p>This is the start of my Technical Artist portfolio.</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Brayan Fernandez — Technical Artist</title>
+  <meta name="description" content="Technical Artist / VFX — real-time VFX, shaders, tools, workflows." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<script src="script.js"></script>
+
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-dot"></span>
+        <span class="brand-text">Brayan Fernandez</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn-small">Contact</a>
+      </nav>
+    </div>
+  </header>
+  
+    <section class="reel">
+        <div class="container">
+            <video
+                class="reel-video"
+                src="reel.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+            ></video>
+
+            <div class="reel-caption">
+            <p class="reel-title">Technical Artist / VFX Reel</p>
+            <p class="reel-sub">
+                Unreal Niagara · Unity VFX Graph · Shaders · Tools
+            </p>
+            </div>
+        </div>
+    </section>
+
+  <main>
+  
+
+    <!-- PROJECTS -->
+   <section class="portfolio" id="portfolio">
+  <div class="container">
+
+    <h2 class="portfolio-title">PORTFOLIO</h2>
+
+    <div class="portfolio-filters">
+      <button class="active" data-filter="all">ALL</button>
+      <button data-filter="personal">PERSONAL</button>
+      <button data-filter="professional">PROFESSIONAL</button>
+      <button data-filter="tools">TOOLS</button>
+    </div>
+
+    <div class="portfolio-grid">
+      <!-- ITEM -->
+      <div class="portfolio-item professional">
+        <img src="images/project1.jpg" alt="Project">
+      </div>
+
+      <div class="portfolio-item professional">
+        <img src="images/project2.jpg" alt="Project">
+      </div>
+
+      <div class="portfolio-item tools">
+        <img src="images/project3.jpg" alt="Project">
+      </div>
+
+      <div class="portfolio-item personal">
+        <img src="images/project4.jpg" alt="Project">
+      </div>
+
+      <div class="portfolio-item professional">
+        <img src="images/project5.jpg" alt="Project">
+      </div>
+
+      <div class="portfolio-item personal">
+        <img src="images/project6.jpg" alt="Project">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+   <section class="experience" id="experience">
+  <div class="container">
+
+    <h2 class="experience-title">EXPERIENCE</h2>
+
+    <div class="experience-tabs">
+      <button class="active" data-tab="professional">Professional</button>
+      <button data-tab="education">Education</button>
+    </div>
+
+    <!-- PROFESSIONAL -->
+    <div class="experience-list active" id="professional">
+
+      <div class="experience-item">
+        <div class="experience-logo">
+          <!-- optional logo -->
+          <img src="images/studio1.png" alt="">
+        </div>
+
+        <div class="experience-content">
+          <h3>Technical Artist / VFX</h3>
+          <p class="experience-meta">Shipped Game Project · Unreal Engine 5</p>
+          <p class="experience-date">2024</p>
+
+          <p class="experience-desc">
+            Developed real-time VFX using Niagara, authored master shaders,
+            implemented stylized effects, and collaborated with designers and programmers
+            to deliver a complete shipped title.
+          </p>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-logo"></div>
+
+        <div class="experience-content">
+          <h3>Technical Artist (Academic Projects)</h3>
+          <p class="experience-meta">Unity · Unreal · Tooling</p>
+          <p class="experience-date">2022 – 2024</p>
+
+          <p class="experience-desc">
+            Built VFX Graph systems, shader tools, editor utilities,
+            and procedural workflows focused on readability, performance,
+            and artist usability.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="experience-list" id="education">
+
+      <div class="experience-item">
+        <div class="experience-logo"></div>
+
+        <div class="experience-content">
+          <h3>B.S. in Games</h3>
+          <p class="experience-meta">University of Utah</p>
+          <p class="experience-date">2020 – 2024</p>
+
+          <p class="experience-desc">
+            Focus on technical art, real-time rendering, shaders,
+            VFX pipelines, and game production.
+          </p>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-logo"></div>
+
+        <div class="experience-content">
+          <h3>VFX & Shader Training</h3>
+          <p class="experience-meta">Self-Directed / Online</p>
+          <p class="experience-date">Ongoing</p>
+
+          <p class="experience-desc">
+            Niagara, Unity VFX Graph, Shader Graph, HLSL fundamentals,
+            Substance Designer, Houdini basics, and tool development.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+  <div class="container">
+
+    <h2 class="about-title">ABOUT ME</h2>
+
+    <div class="about-top">
+
+      <!-- Portrait -->
+      <div class="about-photo">
+        <img src="images/profile.jpg" alt="Brayan Fernandez">
+      </div>
+
+      <!-- Bio -->
+      <div class="about-text">
+        <p>
+          Hey! I’m <strong>Brayan Fernandez</strong>, a <strong>Technical Artist / VFX Artist</strong>
+          focused on real-time visual effects, shaders, and artist-friendly tools.
+        </p>
+
+        <p>
+          I work primarily with <strong>Unreal Engine (Niagara)</strong> and
+          <strong>Unity (VFX Graph)</strong>, building stylized and readable effects,
+          scalable shader systems, and efficient workflows for production teams.
+        </p>
+
+        <p>
+          I’ve shipped one game title and continuously explore procedural techniques,
+          shader development, and tool creation to improve iteration speed and visual quality.
+        </p>
+
+        <p>
+          I’m currently open to junior, contract, and freelance opportunities.
+          Always happy to talk tech art, VFX, and pipelines.
+        </p>
+
+        <div class="about-actions">
+          <a href="resume.pdf" class="btn-outline" download>Download Resume</a>
+          <a href="#contact" class="btn-primary">Contact Me</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SKILLS GRID -->
+    <div class="about-skills">
+
+      <!-- SOFTWARE -->
+      <div class="skills-block">
+        <h3>Software</h3>
+        <ul>
+            <li>
+            <img src="icons/unity.svg" alt="Unreal Engine">
+                Unreal Engine
+            </li>
+            <li>Unity</li>
+            <li>Blender</li>
+            <li>Substance 3D</li>
+            <li>Houdini</li>
+            <li>Photoshop</li>
+        </ul>
+      </div>
+
+      <!-- SKILLS -->
+      <div class="skills-block">
+        <h3>Skills</h3>
+        <ul>
+          <li>Real-time VFX</li>
+          <li>Shader Graph & HLSL</li>
+          <li>Procedural Content</li>
+          <li>Tool Development</li>
+          <li>Performance Optimization</li>
+          <li>Scene Lighting</li>
+        </ul>
+      </div>
+
+      <!-- LANGUAGES -->
+      <div class="skills-block">
+        <h3>Languages & Tech</h3>
+        <ul>
+          <li>C#</li>
+          <li>Python</li>
+          <li>HLSL / GLSL</li>
+          <li>Shader Graph</li>
+          <li>UI Toolkit</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Fast ways to reach you.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Email</h3>
+            <p class="small">Replace with your email.</p>
+            <a class="btn" href="mailto:brayan@email.com">brayan@email.com</a>
+          </div>
+
+          <div class="card">
+            <h3>Links</h3>
+            <p class="small">Replace with real URLs.</p>
+            <div class="link-list">
+              <a href="https://github.com/BRAYANUNO3" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="#" target="_blank" rel="noreferrer">Demo Reel</a>
+              <a href="#" target="_blank" rel="noreferrer">Resume (PDF)</a>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <p class="small">© <span id="year"></span> Brayan Fernandez — Built with HTML + CSS.</p>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
